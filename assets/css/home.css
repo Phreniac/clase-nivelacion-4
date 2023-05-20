@@ -4,8 +4,6 @@
     height: 62px;
     width: 152px;
     display:flex;
-    background-color: transparent;
-    background-color: violet;
     justify-content: center;
     bottom: 40px;
     right: 100px;
@@ -21,6 +19,16 @@
 }
 
 .button-start button{
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    color: var(--color-button-text);
+    background: var(--color-button);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(110, 20, 118, 0.2);
+}
+
+.button-next button{
     width: 150px;
     height: 60px;
     cursor: pointer;
