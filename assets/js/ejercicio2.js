@@ -20,7 +20,7 @@ function calculateTotalSales(ventas) {
   return totalVentas;
 }
 
-calculateTotalSales(ventas)
+console.log(calculateTotalSales(ventas))
 
 function calculateAverageSale(ventas) {
   let totalVentas = 0;
@@ -48,4 +48,28 @@ function findMaxSale(ventas) {
   return maxVenta;
 }
 
-findMaxSale(ventas)
+console.log(findMaxSale(ventas))
+
+function findMinSale(ventas) {
+  let minVenta = ventas[0].valor;
+  
+  for (let i = 1; i < ventas.length; i++) {
+    if (ventas[i].valor < minVenta) {
+      minVenta = ventas[i].valor;
+    }
+  }
+  
+  return minVenta;
+}
+
+console.log(findMinSale(ventas))
+
+function filterSalesByProduct(ventas, producto) {
+  const ventasFiltradas = ventas.filter(venta => venta.producto === producto);
+  return ventasFiltradas;
+}
+
+
+const ventasFiltradas = filterSalesByProduct(ventas, 'Sombrero');
+console.log(ventasFiltradas);
+
