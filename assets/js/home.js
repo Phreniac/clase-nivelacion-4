@@ -1,5 +1,6 @@
 let maxclick = 100;
 const button_start = document.getElementById('button_start');
+const button_next = document.getElementById('button-next');
 
 function CountClicks(){
     if(maxclick > 0) 
@@ -21,8 +22,4 @@ function helpMe(){
 const showImage = () =>{
     const image_container = document.getElementsByClassName('container-img');
     if(image_container.style.display == "none") image_container.style.display = "block";
-}
-
-function goToEjercicio1(){
-    window.location.href = 'ejercicio1.html';
 }

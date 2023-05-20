@@ -20,11 +20,12 @@
 //     '#FFE4FF', // Lavanda rosada
 //     '#FFEBCD'  // Almendra claro
 // ];
-// const tasks = [
-//     '<p>1. Agrega un evento con el método "addEventListener" <br> que permita que al posicionar el cursor sobre cualquier elemento de la lista de clases <br> "haciaejercicio" cambie el color de fondo de este a un color aleatorio</p>',
-//     '<p>2. El color debe quedar momentaneamente, de manera que quede seleccionado </p>',
-//     '<p>3. Al estar todos los elementos seleccionados se habilitará el botón al siguiente ejercicio "ejercicio2.html"</p>',
-// ];
+const tasks = [
+    '<p>1. Agrega un evento con el método "addEventListener" <br> que permita que al posicionar el cursor sobre cualquier elemento de la lista de clases <br> "haciaejercicio" cambie el color de fondo de este a un color aleatorio</p>',
+    '<p>2. El color debe quedar momentaneamente, de manera que quede seleccionado </p>',
+    '<p>3. Al estar todos los elementos seleccionados se habilitará el botón al siguiente ejercicio "ejercicio2.html"</p>',
+];
+
 
 let index = 0;
 const content_container = document.getElementById('content_container');
@@ -33,8 +34,8 @@ const changeText = (index) =>{
 }
 content_container.addEventListener('mouseenter', ()=>{
     content_container.addEventListener('click', function(){
-        // index == 0 ? index = 1 : index++
-        // index == 3 ? index = 0:'';
+        index == 0 ? index = 1 : index++
+        index == 3 ? index = 0:'';
         changeText(index);
     });
 });
@@ -42,3 +43,39 @@ content_container.addEventListener('mouseleave', ()=>{
     index = 0;
 });
 
+console.log("===============resolviendo primer test========================================")
+
+//=======================================================
+// Selecciona todos los elementos con la clase 'haciaejercicio'
+const elements = document.querySelectorAll('.haciaejercicio');
+
+// Función para generar un color aleatorio en formato RGB
+const getRandomColor = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+// Agrega un evento de 'mouseenter' y 'mouseout' a cada elemento
+elements.forEach(element => {
+  // Genera un color aleatorio para el elemento
+  const randomColor = getRandomColor();
+  
+  element.addEventListener('mouseover', () => {
+    // Cambia el color de fondo del elemento al color aleatorio generado anteriormente
+    element.style.backgroundColor = randomColor;
+  });
+  
+  element.addEventListener('mouseout', () => {
+    // Restablece el color de fondo del elemento a su valor original
+    element.style.backgroundColor = '';
+  });
+});
+
+
+const button_next = document.getElementById('button-next');
+
+button_next.addEventListener('click', () => {
+    window.location.href = 'ejercicio2.html';
+  });

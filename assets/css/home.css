@@ -1,14 +1,20 @@
-
 .button-next {
-    position:absolute;
+    position: absolute;
     height: 62px;
     width: 152px;
-    display:flex;
-    background-color: transparent;
+    display: flex;
+    /* background-color: transparent; */
     /* background-color: violet; */
-    justify-content: center;
+    /* justify-content: center; */
     bottom: 40px;
     right: 100px;
+    cursor: pointer;
+    color: var(--color-button-text);
+    background: var(--color-button);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(110, 20, 118, 0.2);
+    margin: auto;
+
 }
 .button-next button {
     width: 150px;
@@ -20,16 +26,7 @@
     box-shadow: 2px 2px 8px rgba(110, 20, 118, 0.2);
 }
 
-.button-start{
-    padding-top: 100px;
-    margin:auto;
-    height: 200px;
-    width: 200px;
-    display:flex;
-    justify-content: center;
-}
-
-.button-start button{
+.button-next button {
     width: 150px;
     height: 60px;
     cursor: pointer;
@@ -39,15 +36,33 @@
     box-shadow: 2px 2px 8px rgba(110, 20, 118, 0.2);
 }
 
-.img-container{
+.button-start {
+    padding-top: 100px;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-start button {
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    color: var(--color-button-text);
+    background: var(--color-button);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(110, 20, 118, 0.2);
+}
+
+.img-container {
     margin-top: 100px;
     height: 400px;
     width: 400px;
-    margin:auto;
-    display:flex;
+    margin: auto;
+    display: flex;
 }
-.img-container img{
+
+.img-container img {
     width: 100%;
 }
-
-
