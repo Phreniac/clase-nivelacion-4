@@ -23,3 +23,9 @@ const showImage = () =>{
     if(image_container.style.display === "none"){ 
         image_container.style.display = "block";
 }}
+
+const buttonNext = document.getElementById('button_next');
+
+buttonNext.addEventListener('click', function() {
+    window.location.href = 'ejercicio1.html';
+});
