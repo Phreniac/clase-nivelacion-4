@@ -29,36 +29,40 @@ const tasks = [
 const elementos = document.querySelectorAll('.haciaejercicio');
 
 function generarColorAleatorio() {
-  const caracteres = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += caracteres[Math.floor(Math.random() * 16)];
-  }
-  return color;
+    const caracteres = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += caracteres[Math.floor(Math.random() * 16)];
+    }
+    return color;
 }
 
 function cambiarColorFondo() {
-  const colorAleatorio = generarColorAleatorio();
-  this.style.backgroundColor = colorAleatorio;
+    const colorAleatorio = generarColorAleatorio();
+    this.style.backgroundColor = colorAleatorio;
 }
 
 elementos.forEach(elemento => {
-  elemento.addEventListener('mouseover', cambiarColorFondo);
+    elemento.addEventListener('mouseover', cambiarColorFondo);
+    elemento.addEventListener('mouseout', () => {
+        elemento.style.backgroundColor = '';
+    });
 });
+
 
 let index = 0;
 const content_container = document.getElementById('content_container');
-const changeText = (index) =>{
+const changeText = (index) => {
     content_container.innerHTML = tasks[index];
 }
-content_container.addEventListener('mouseenter', ()=>{
-    content_container.addEventListener('click', function(){
+content_container.addEventListener('mouseenter', () => {
+    content_container.addEventListener('click', function () {
         index == 0 ? index = 1 : index++
-        index == 3 ? index = 0:'';
+        index == 3 ? index = 0 : '';
         changeText(index);
     });
 });
-content_container.addEventListener('mouseleave', ()=>{
+content_container.addEventListener('mouseleave', () => {
     index = 0;
 });
 
