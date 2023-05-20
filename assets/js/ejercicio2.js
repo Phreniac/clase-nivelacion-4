@@ -9,3 +9,23 @@ const ventas = [
     { producto: 'Sombrero Violeta',tipo:'Sombrero', valor: 33390 },
     { producto: 'Sombrero Pequeño',tipo:'Sombrero', valor: 8290 },
   ];
+
+  const calculateTotalSales = (ventas) => {
+    let totalVentas = 0;
+    ventas.forEach((venta) => {
+      totalVentas += venta.valor;
+    });
+    console.log(totalVentas);
+  };
+  calculateTotalSales(ventas);
+  
+  const calculateAverageSale = (ventas) => {
+    let totalVentas = 0;
+    ventas.forEach((venta) => {
+      totalVentas += venta.valor;
+    });
+    let promedioVentas = totalVentas / ventas.length;
+  
+    console.log(promedioVentas);
+  };
+  calculateAverageSale(ventas)
