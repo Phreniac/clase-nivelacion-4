@@ -67,7 +67,7 @@ content_container.addEventListener('mouseleave', () => {
 });
 
 
-const button_next = document.getElementById('button-next');
+const button_next = document.getElementById('button_next');
 
 button_next.addEventListener('click', () => {
     window.location.href = 'ejercicio2.html';
