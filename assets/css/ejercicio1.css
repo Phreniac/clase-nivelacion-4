@@ -1,33 +1,32 @@
+.container.ejercicio1 {
+  padding-top: 100px;
+}
+.content-container {
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  text-align: center;
+  color: var(--color-button-text);
+  color: var(--color-text);
+  background-color: var(--color-button-text);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
 
-.container.ejercicio1{
-    padding-top: 100px;
+.container-boxes {
+  display: flex;
+  margin: auto;
+  width: 60%;
 }
-.content-container{
-    width: 50%;
-    height: 30%;
-    margin: auto;
-    text-align: center;
-    color: var(--color-button-text);
-    /* color: var(--color-text); */
-    background-color: var(--color-button-text);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    cursor:pointer;
-}
-
-.container-boxes{
-    display:flex;
-    margin:auto;
-    width: 60%;
-}
-.haciaejercicio{
-    margin-top: 100px;
-    width: 25%;
-    height:100px;
-    background-color: rgb(79, 4, 160);
-    border: 1px solid rgb(255, 0, 255);
-    cursor:pointer;
+.haciaejercicio {
+  margin-top: 100px;
+  width: 25%;
+  height: 100px;
+  background-color: rgb(79, 4, 160);
+  border: 1px solid rgb(255, 0, 255);
+  cursor: pointer;
 }

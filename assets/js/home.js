@@ -21,3 +21,7 @@ const showImage = () => {
   if (image_container.style.display == "none")
     image_container.style.display = "block";
 };
+
+const avanzarJuego = () => {
+  location.href = "ejercicio1.html";
+};
