@@ -66,3 +66,9 @@ content_container.addEventListener('mouseleave', () => {
     index = 0;
 });
 
+
+const button_next = document.getElementById('button-next');
+
+button_next.addEventListener('click', () => {
+    window.location.href = 'ejercicio2.html';
+  });

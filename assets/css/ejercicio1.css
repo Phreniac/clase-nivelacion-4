@@ -2,6 +2,26 @@
 .container.ejercicio1{
     padding-top: 100px;
 }
+
+.button_next {
+    position:absolute;
+    height: 62px;
+    width: 152px;
+    display:flex;
+    justify-content: center;
+    bottom: 40px;
+    right: 100px;
+}
+
+.button_next button{
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    color: var(--color-button-text);
+    background: var(--color-button);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(110, 20, 118, 0.2);
+}
 .content-container{
     width: 50%;
     height: 30%;
