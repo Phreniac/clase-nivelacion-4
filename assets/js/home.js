@@ -11,7 +11,7 @@ function CountClicks(){
 
 function helpMe(){
     try {
-        //const instructions = 'Crea un elemento <img> con esta direccion relativa ../img/haciaejercicio1.png';
+        const instructions = 'Crea un elemento <img> con esta direccion relativa ../img/haciaejercicio1.png';
         console.log(instructions);
     } catch (error) {
         console.log('help!!! home.js');
