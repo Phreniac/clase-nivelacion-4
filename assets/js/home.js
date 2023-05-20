@@ -19,6 +19,6 @@ function helpMe(){
 }
 
 const showImage = () =>{
-    const image_container = document.getElementsByClassName('container-img');
-    if(image_container.style.display == "none") image_container.style.display = "block";
-}
+    const image_container = document.getElementsByClassName('container-img')[0];
+    if(image_container.style.display === "none"){ image_container.style.display = "block";
+}}
