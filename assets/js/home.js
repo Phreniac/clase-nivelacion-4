@@ -2,12 +2,12 @@ let maxclick = 100;
 const button_start = document.getElementById('button_start');
 
 function CountClicks(){
-    if(maxclick > 0) 
+    if(maxclick > 0){ 
         maxclick--,
         helpMe();
-    else 
+    }else{ 
         showImage();
-}
+    }}
 
 function helpMe(){
     try {
