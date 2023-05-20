@@ -8,7 +8,7 @@
     margin: auto;
     text-align: center;
     color: var(--color-button-text);
-    /* color: var(--color-text); */
+    color: var(--color-text);
     background-color: var(--color-button-text);
     border-radius: 10px;
     display: flex;
@@ -30,4 +30,26 @@
     background-color: rgb(79, 4, 160);
     border: 1px solid rgb(255, 0, 255);
     cursor:pointer;
+}
+
+.button-next {
+    position:absolute;
+    height: 62px;
+    width: 152px;
+    display:flex;
+    background-color: transparent;
+    /*background-color: violet; */
+    justify-content: center;
+    bottom: 40px;
+    right: 100px;
+}
+
+.button-next button{
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    color: var(--color-button-text);
+    background: var(--color-button);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(110, 20, 118, 0.2);
 }
