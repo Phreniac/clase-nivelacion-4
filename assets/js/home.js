@@ -1,4 +1,4 @@
-let maxclick = 100;
+let maxclick = 10;
 const button_start = document.getElementById('button_start');
 
 function CountClicks(){
@@ -20,5 +20,6 @@ function helpMe(){
 
 const showImage = () =>{
     const image_container = document.getElementsByClassName('container-img')[0];
-    if(image_container.style.display === "none"){ image_container.style.display = "block";
+    if(image_container.style.display === "none"){ 
+        image_container.style.display = "block";
 }}
